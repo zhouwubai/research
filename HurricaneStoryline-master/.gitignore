@@ -1,0 +1,13 @@
+*.class
+
+# Package Files #
+*.jar
+*.war
+*.ear
+
+# Cached Files #
+*.*~
+
+# configuration file
+Util.java
+.settings/*

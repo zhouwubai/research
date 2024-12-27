@@ -1,0 +1,83 @@
+
+StoryTeller：(contain main test entry)
+	输入：经过domnate计算的set.
+	输出：经过linear programming得到的storyline
+	
+DocFilter
+	输入：一定条件筛选得到的事件
+	输出：domnate set
+	
+BingNewsCrawler
+	输入：关键词（Hurricane Irene）
+	输出：存入数据库的BingSearchNews
+
+EventRecognizer2DB
+	输入：disaster ID
+	输出：从与之相关的news抽出所有事件
+	
+SerializeFactory:
+	功能：序列化与反序列化
+	
+DBConnection:
+	得到想要的数据库数据
+	
+EventLoader
+	从数据库load想要的事件
+	abc
+	
+	
+	
+	
+	
+	
+	$(function () {
+        $('#container').highcharts({
+            chart: {
+                type: 'column'
+            },
+            title: {
+                text: 'Average Rouge 2 of Different Systems'
+            },
+            xAxis: {
+                categories: [
+                    'Average_R',
+                    'Average_P',
+                    'Average_F'
+                ]
+            },
+            yAxis: {
+                min: 0,
+                title: {
+                    text: 'Average Rouge2'
+                }
+            },
+            tooltip: {
+                headerFormat: '<span style="font-size:10px">{point.key}</span><table>',
+                pointFormat: '<tr><td style="color:{series.color};padding:0">{series.name}: </td>' +
+                    '<td style="padding:0"><b>{point.y:.1f} mm</b></td></tr>',
+                footerFormat: '</table>',
+                shared: true,
+                useHTML: true
+            },
+            plotOptions: {
+                column: {
+                    pointPadding: 0.2,
+                    borderWidth: 0
+                }
+            },
+            series: [{
+                name: 'Dominating Set',
+                data: [0.075,0.071,0.073]
+    
+            }, {
+                name: 'Steiner Tree',
+                data: [0.086,0.079,0.082]
+    
+            }, {
+                name: 'Linear Programming',
+                data: [0.139,0.200,0.161]
+    
+            }]
+        });
+    });
+	
